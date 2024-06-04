@@ -1,4 +1,4 @@
-package robability.abstracts;
+package robability.distributions.abstracts;
 
 /**
  * An abstract class for general probability distributions
@@ -22,7 +22,7 @@ public abstract class GeneralDistribution {
      * Determines whether value is an element of the distribution
      * @return True if value is the distribution, False otherwise
      */
-    public abstract boolean elementOf(double value);
+    public abstract boolean inRangeOf(double value);
 
     /**
      * @return The current parameters of the distribution

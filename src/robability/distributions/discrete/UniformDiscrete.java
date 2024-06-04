@@ -1,6 +1,6 @@
-package robability.discrete;
+package robability.distributions.discrete;
 
-import robability.abstracts.DiscreteDistribution;
+import robability.distributions.abstracts.DiscreteDistribution;
 
 /**
  * Class which represents a discrete uniform distribution (X~Unif(a,b))
@@ -15,7 +15,7 @@ public class UniformDiscrete extends DiscreteDistribution {
     private final int a, b;
 
     /**
-     * Creates a new uniform distribution (X~Unif(a,b))
+     * Creates a new uniform distribution with params a & b
      * @param a First parameter, must be <= b
      * @param b Second parameter, must be > a
      * @throws IllegalArgumentException If a > b
@@ -31,11 +31,11 @@ public class UniformDiscrete extends DiscreteDistribution {
     /**
      * The PMF of the uniform distribution
      * @param k The value to plug into the PMF
-     * @return px(k)
+     * @return pX(k)
      */
     @Override
     public double pmf(double k) {
-        if (elementOf(k)){
+        if (inRangeOf(k)){
             return 1 / ( (double) (b-a+1));
         }
         return 0;
@@ -52,7 +52,7 @@ public class UniformDiscrete extends DiscreteDistribution {
 
     /**
      * The variance of the uniform distribution
-     * @return Var(x)
+     * @return Var(X)
      */
     @Override
     public double variance() {
@@ -65,7 +65,7 @@ public class UniformDiscrete extends DiscreteDistribution {
      * @return Whether value is an element of the distribution
      */
     @Override
-    public boolean elementOf(double value) {
+    public boolean inRangeOf(double value) {
         return ((int) value == value && value >= a && value <= b);
     }
 

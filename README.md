@@ -24,10 +24,15 @@ distributions (.pmf(k))
 - PDF and CDF of a double k for continuous distributions 
 (.pdf(k) and .cdf(k))
 - Determine whether a double value is in the range of the
-distribution (.elementOf(value))
+distribution (.inRangeOf(value))
 - Generate an array of doubles 
 containing the parameters of the distribution
   (.params())
+
+**How to use Combinatorial**
+
+Combinatorial contains some functions which may be useful
+for certain statistics related applications.
 
 Wow, and that's your magical introduction into the world
 of Robability!

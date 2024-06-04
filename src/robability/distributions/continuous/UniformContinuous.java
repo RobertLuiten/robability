@@ -1,6 +1,6 @@
-package robability.continuous;
+package robability.distributions.continuous;
 
-import robability.abstracts.ContinuousDistribution;
+import robability.distributions.abstracts.ContinuousDistribution;
 
 /**
  * A class which represents a continuous uniform distribution (X~Unif(a,b)
@@ -15,7 +15,7 @@ public class UniformContinuous extends ContinuousDistribution {
     private final double a, b;
 
     /**
-     * Creates a new uniform continuous distribution
+     * Creates a new uniform continuous distribution with params a & b
      * @param a First parameter, must be < b
      * @param b Second parameter, must be > a
      * @throws IllegalArgumentException If a > b
@@ -31,7 +31,7 @@ public class UniformContinuous extends ContinuousDistribution {
     /**
      * The probability density function of the distribution
      * @param x The value to plug into the PDF
-     * @return fx(x)
+     * @return fX(x)
      */
     @Override
     public double pdf(double x) {
@@ -41,7 +41,7 @@ public class UniformContinuous extends ContinuousDistribution {
     /**
      * The continuous density function of the distribution
      * @param x The value to plug into the CDF
-     * @return Fx(x)
+     * @return FX(x)
      */
     @Override
     public double cdf(double x) {
@@ -64,7 +64,7 @@ public class UniformContinuous extends ContinuousDistribution {
 
     /**
      * The variance of the distribution
-     * @return Var(x)
+     * @return Var(X)
      */
     @Override
     public double variance() {
@@ -77,7 +77,7 @@ public class UniformContinuous extends ContinuousDistribution {
      * @return True if the value is in range, false otherwise
      */
     @Override
-    public boolean elementOf(double value) {
+    public boolean inRangeOf(double value) {
         return (value >= a && value <= b);
     }
 
