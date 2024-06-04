@@ -1,13 +1,13 @@
-package robability.distributions.continuous;
+package com.robability.distributions.continuous;
 
-import robability.distributions.abstracts.ContinuousDistribution;
+import com.robability.distributions.abstracts.ContinuousDistribution;
 
 /**
  * A class which represents a continuous uniform distribution (X~Unif(a,b)
  * where a < b
  * Author: Robert Luiten
  */
-public class UniformContinuous extends ContinuousDistribution {
+public class UniformContinuousDistribution extends ContinuousDistribution {
 
     /**
      * The parameters a & b for the distribution
@@ -20,7 +20,7 @@ public class UniformContinuous extends ContinuousDistribution {
      * @param b Second parameter, must be > a
      * @throws IllegalArgumentException If a > b
      */
-    public UniformContinuous(double a, double b){
+    public UniformContinuousDistribution(double a, double b){
         if (a > b){
             throw new IllegalArgumentException();
         }

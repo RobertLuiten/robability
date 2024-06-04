@@ -1,7 +1,7 @@
-package robability.distributions.discrete;
+package com.robability.distributions.discrete;
 
-import robability.combinatorial.Combinatorial;
-import robability.distributions.abstracts.DiscreteDistribution;
+import com.robability.distributions.abstracts.DiscreteDistribution;
+import com.robability.combinatorial.Combinatorial;
 
 /**
  * An implementation of a binomial distribution (X~Bin(n,p))
@@ -10,14 +10,11 @@ import robability.distributions.abstracts.DiscreteDistribution;
 public class BinomialDistribution extends DiscreteDistribution {
 
     /**
-     * Number of trials
-     */
-    private int n;
-
-    /**
-     * Probability of event
+     * Probability of event and number of trials respectively
      */
     private final double p;
+
+    private final int n;
 
     /**
      * Creates new binomial distribution with params n and p
@@ -30,20 +27,6 @@ public class BinomialDistribution extends DiscreteDistribution {
         }
         this.p = p;
         this.n = n;
-    }
-
-    /**
-     * Changes the number of trials in the distribution
-     * @param n The new number of trials, must be >= 0
-     * @return The previous number of trials, or -1 if n < 0
-     */
-    public int setn(int n){
-        if (n < 0){
-            return -1;
-        }
-        int temp = this.n;
-        this.n = n;
-        return temp;
     }
 
     /**

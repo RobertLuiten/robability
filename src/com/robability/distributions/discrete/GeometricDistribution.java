@@ -1,6 +1,6 @@
-package robability.distributions.discrete;
+package com.robability.distributions.discrete;
 
-import robability.distributions.abstracts.DiscreteDistribution;
+import com.robability.distributions.abstracts.DiscreteDistribution;
 
 /**
  * A class for a geometric probability distribution (X~Geo(p))

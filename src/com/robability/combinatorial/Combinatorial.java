@@ -1,4 +1,4 @@
-package robability.combinatorial;
+package com.robability.combinatorial;
 
 /**
  * A class for implementing combinatorial functions
@@ -17,7 +17,7 @@ public final class Combinatorial {
      * @param k Amount of objects to pick
      * @return P(n,k)
      */
-    public static int permutate(int n, int k){
+    public static int permutations(int n, int k){
         return factorial(n)/factorial(n-k);
     }
 

@@ -1,13 +1,13 @@
-package robability.distributions.discrete;
+package com.robability.distributions.discrete;
 
-import robability.distributions.abstracts.DiscreteDistribution;
+import com.robability.distributions.abstracts.DiscreteDistribution;
 
 /**
  * Class which represents a discrete uniform distribution (X~Unif(a,b))
  * where a & b are integers >=0 and a <= b
  * Author: Robert Luiten
  */
-public class UniformDiscrete extends DiscreteDistribution {
+public class UniformDiscreteDistribution extends DiscreteDistribution {
 
     /**
      * The parameters of the distribution, a & b respectively
@@ -20,7 +20,7 @@ public class UniformDiscrete extends DiscreteDistribution {
      * @param b Second parameter, must be > a
      * @throws IllegalArgumentException If a > b
      */
-    public UniformDiscrete(int a, int b){
+    public UniformDiscreteDistribution(int a, int b){
         if (a > b){
             throw new IllegalArgumentException();
         }

@@ -1,4 +1,4 @@
-package robability.distributions.abstracts;
+package com.robability.distributions.abstracts;
 
 /**
  * An abstract class for discrete probability distributions
