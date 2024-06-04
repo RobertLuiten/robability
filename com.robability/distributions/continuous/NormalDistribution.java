@@ -1,7 +1,7 @@
-package com.robability.distributions.continuous;
+package distributions.continuous;
 
-import com.robability.distributions.abstracts.ContinuousDistribution;
-import com.robability.tables.ZTable;
+import distributions.abstracts.ContinuousDistribution;
+import tables.ZTable;
 
 /**
  * An implementation of a normal distribution (X~N(mean,variance)

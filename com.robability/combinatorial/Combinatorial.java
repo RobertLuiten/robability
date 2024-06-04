@@ -1,4 +1,4 @@
-package com.robability.combinatorial;
+package combinatorial;
 
 /**
  * A class for implementing combinatorial functions

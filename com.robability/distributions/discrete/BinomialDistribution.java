@@ -1,7 +1,7 @@
-package com.robability.distributions.discrete;
+package distributions.discrete;
 
-import com.robability.distributions.abstracts.DiscreteDistribution;
-import com.robability.combinatorial.Combinatorial;
+import distributions.abstracts.DiscreteDistribution;
+import combinatorial.Combinatorial;
 
 /**
  * An implementation of a binomial distribution (X~Bin(n,p))

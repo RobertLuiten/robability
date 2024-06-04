@@ -1,6 +1,6 @@
-package com.robability.distributions.continuous;
+package distributions.continuous;
 
-import com.robability.distributions.abstracts.ContinuousDistribution;
+import distributions.abstracts.ContinuousDistribution;
 
 /**
  * A class which represents a continuous uniform distribution (X~Unif(a,b)

@@ -1,4 +1,4 @@
-package com.robability.tables;
+package tables;
 
 /**
  * An approximated Z-Table implementation for Java (For X~N(0,1))

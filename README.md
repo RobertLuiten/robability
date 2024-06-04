@@ -1,6 +1,6 @@
 **_Welcome to the wonderful world of Robability._**
 
-This library is intended for use to help calculate
+This package is intended for use to help calculate
 common probability distributions.
 
 I'm in University right now, so I'm just creating this to get

@@ -1,6 +1,6 @@
-package com.robability.distributions.discrete;
+package distributions.discrete;
 
-import com.robability.distributions.abstracts.DiscreteDistribution;
+import distributions.abstracts.DiscreteDistribution;
 
 /**
  * Class which represents a discrete uniform distribution (X~Unif(a,b))
