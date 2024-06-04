@@ -38,6 +38,4 @@ public class ZTable {
         return phi((x-mean)/Math.sqrt(variance));
     }
 
-
-
 }
