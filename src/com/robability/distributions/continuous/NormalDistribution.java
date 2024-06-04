@@ -1,6 +1,7 @@
 package com.robability.distributions.continuous;
 
 import com.robability.distributions.abstracts.ContinuousDistribution;
+import com.robability.tables.ZTable;
 
 /**
  * An implementation of a normal distribution (X~N(mean,variance)
@@ -38,13 +39,12 @@ public class NormalDistribution extends ContinuousDistribution {
 
     /**
      * The cumulative distribution function of the normal distribution
-     * TODO: Add Z Table Support UNFINISHED!
      * @param x The value to plug into the CDF
      * @return FX(x)
      */
     @Override
     public double cdf(double x) {
-        //TODO: Add Z-Table Support
+        ZTable.phi(x, mean, variance);
         return 0;
     }
 
